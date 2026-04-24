@@ -87,14 +87,14 @@ const MUNICIPIO_CONFIG = {
   //  6. GOOGLE (configurar con cuenta del cliente)
   // ════════════════════════════════════════════════════════════════════════
   googleClientId: "1031869692179-qt49mf47juovs08une1q1m3i0vst1l3m.apps.googleusercontent.com",
-  sheetId:        "https://docs.google.com/spreadsheets/d/1zeHl8biHvOJKeOUYwVXX-DagDU8K-OEHdSGXvcgUYL0/edit?gid=0#gid=0",
+  sheetId:        "1zeHl8biHvOJKeOUYwVXX-DagDU8K-OEHdSGXvcgUYL0",
   appUrl:         "https://llm1234ag.github.io/inventario-arboles-Pe-ol/",
 
   // ════════════════════════════════════════════════════════════════════════
   //  7. CLAVE DE LICENCIA (generada por el desarrollador — no modificar)
   //     Obtener en: contactar a Luis Miguel Arcila
   // ════════════════════════════════════════════════════════════════════════
-  licenseKey: "ZWwgcGXDsW9sfEVMIFBFw5FPTHwyMDI3LTA0LTI0fHBlcm1hbmVudGU.YVZ4L9A2Yg761ezOUI8aMSpcZoPzMaoV79RspCeGFfT7z7O6jGSzaeNb5RJdDTb5XaW4XiMzueB2mYHZKOV3yw",   // ← pegar aquí la clave que te entregó el desarrollador
+  licenseKey: "",   // ← pegar aquí la clave que te entregó el desarrollador
 
   // ════════════════════════════════════════════════════════════════════════
   //  ⚠ NO ELIMINAR — Requerido por licencia comercial
@@ -199,7 +199,7 @@ function _applyConfigDOM() {
     if (s.logoUrl && s.logoUrl.trim() !== '') {
       loginLogoEl.innerHTML = '<img src="' + s.logoUrl + '" alt="Escudo ' + s.nombre
         + '" style="height:72px;width:auto;object-fit:contain;margin-bottom:4px;"'
-        + ' onerror="this.style.display='none';this.parentNode.textContent='' + s.logoEmoji + ''">';
+        + ' onerror="this.style.display=\'none\';this.parentNode.textContent=\'\' + s.logoEmoji + '\'">';
     } else {
       loginLogoEl.textContent = s.logoEmoji;
     }
